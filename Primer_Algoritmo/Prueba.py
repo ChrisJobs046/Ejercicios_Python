@@ -48,6 +48,15 @@ def MostrarAltura(altura):
 
 print (MostrarAltura(var_altura))
 '''
+# Recordatorio
+'''
+Aqui puede que esten un poco confundidos con respecto a las tuplas y listas ya que son muy parecidas pero  ojo 
+las tuplas se encierran asi() mientras que las listas [] y la diferencia es que los datos en las tuplas no se puede modificar 
+mientras que en las listas si 😁
+'''
+# Tuplas
+
+medidas = ("28", "15", "32", "40")
 
 # Listas
 
