@@ -29,8 +29,10 @@ print("El nombre del usuario es: "+ Pregunta)
 
 # Funciones
 '''Recuerden que las funciones sirven practicamente para reutilizar codigo'''
-'''return sirve para sacar informacion de una funcion, ya qie por defauk cualquier valor tratado dentro de la funcion se cada dentro
-   de esta.
+
+'''
+return sirve para sacar informacion de una funcion, ya qie por defauk cualquier valor tratado dentro de la funcion se cada dentro
+de esta.
 '''
 
 '''var_altura = int(input("¿Cual es tu altura?: "))
@@ -48,21 +50,44 @@ def MostrarAltura(altura):
 
 print (MostrarAltura(var_altura))
 '''
-# Recordatorio
+
+# Recordatorio para las <tuplas, Listas y Diccionarios>
 '''
 Aqui puede que esten un poco confundidos con respecto a las tuplas y listas ya que son muy parecidas pero  ojo 
-las tuplas se encierran asi() mientras que las listas [] y la diferencia es que los datos en las tuplas no se puede modificar 
-mientras que en las listas si 😁
+las tuplas se encierran asi() mientras que las listas asi [] y la diferencia es que los datos en las tuplas no se modifican ni se 
+pueden agregar nuevos datos mientras que en las listas si 😁, ahora si queremos poder eliminar un dato entonces lo ideal es hacer
+un diccionario
 '''
 # Tuplas
 
-medidas = ("28", "15", "32", "40")
+'''medidas = ("28", "15", "32", "40")'''
 
 # Listas
-
+'''
 Nombres = ["Ramon", "juan", "Lucas"]
 
-print("el nombre es: " + Nombres[0])
+# print("el nombre es: " + Nombres[0])
+
+Nombres.append("nuevo dato")
+
+print(Nombres)
+'''
+
+# Diccionarios
+'''
+Aqui podemos observar que los diccionarios son un poco diferentes ya que no se accede a una posicion solamente con el indice
+si no que ahora podemos asignarle una palabra reservada y asignarle por consiguente un valor😱 y a diferencia de las tuplas y listas se 
+puede eliminar un valor usando <<del>> 
+'''
+Mi_Diccionario = {'clave_1':1, 'clave_2':2, 'clave_3':3}
 
 
+print(Mi_Diccionario['clave_2'])
 
+del(Mi_Diccionario['clave_3'])
+
+print(Mi_Diccionario)
+
+Mi_Diccionario['clave_1'] = 'Nuevo valor'
+
+print(Mi_Diccionario)
